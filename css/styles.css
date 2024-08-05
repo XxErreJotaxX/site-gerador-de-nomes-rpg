@@ -1,0 +1,87 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../img/background.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem ficar fixa durante o scroll */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+button, select {
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    color: #fff;
+    border: none;
+}
+
+#generateButton {
+    background-color: #007bff;
+}
+
+#saveButton {
+    background-color: #28a745;
+}
+
+select {
+    background-color: #fff;
+    color: #333;
+}
+
+p {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+#clearButton {
+    background-color: #dc3545; /* Cor de fundo vermelha */
+    border: none; /* Remove a borda padrão do botão */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#clearButton:hover {
+    background-color: #c82333; /* Cor de fundo vermelha mais escura no hover */
+}
